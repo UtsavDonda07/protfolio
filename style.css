@@ -43,12 +43,16 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden; /* Fallback for older browsers */
+    overflow-x: clip; /* Prevents horizontal scrolling without breaking position: sticky */
+}
+
 body {
     background-color: var(--bg-dark);
     color: var(--text-main);
     font-family: var(--font-primary);
     line-height: 1.6;
-    overflow-x: hidden;
     position: relative;
     min-height: 100vh;
 }
@@ -396,10 +400,12 @@ button, input, textarea {
     padding: 120px 40px;
     transition: var(--transition-smooth);
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+    visibility: hidden; /* Prevents mobile browsers from expanding viewport to the right */
 }
 
 .mobile-nav-overlay.open {
     right: 0;
+    visibility: visible;
 }
 
 .mobile-nav-list {
@@ -1435,7 +1441,7 @@ button, input, textarea {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .nav, .nav-cta {
         display: none;
     }

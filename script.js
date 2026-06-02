@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-link');
 
     const navObserverOptions = {
-        threshold: 0.3,
+        threshold: 0.1,
         rootMargin: '-20% 0px -40% 0px' // Adjust bounds to ensure correct section triggers active tag
     };
 

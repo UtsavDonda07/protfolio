@@ -1102,6 +1102,32 @@ button, input, textarea {
     flex-grow: 1;
 }
 
+.project-description-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-description-list li {
+    font-size: 0.92rem;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 18px;
+    line-height: 1.4;
+}
+
+.project-description-list li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent-cyan);
+    font-weight: bold;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;

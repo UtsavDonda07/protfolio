@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* ==========================================================================
-       CONTACT FORM HANDLING (SIMULATED API)
+       CONTACT FORM HANDLING (FORMSPREE API)
        ========================================================================== */
     const contactForm = document.getElementById('contact-form');
     const submitBtn = contactForm.querySelector('.btn-submit');
@@ -160,19 +160,42 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.classList.add('loading');
         submitBtn.disabled = true;
 
-        // Simulate API post request delay (e.g., Formspree or EmailJS endpoint)
-        setTimeout(() => {
+        // Submit form data to Formspree using fetch
+        const formData = new FormData(contactForm);
+
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
             submitBtn.classList.remove('loading');
-            submitBtn.classList.add('success');
-
-            // Reset form fields after brief delay
-            setTimeout(() => {
-                contactForm.reset();
-                submitBtn.classList.remove('success');
-                submitBtn.disabled = false;
-            }, 3000);
-
-        }, 2000);
+            if (response.ok) {
+                submitBtn.classList.add('success');
+                // Reset form fields after brief delay
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitBtn.classList.remove('success');
+                    submitBtn.disabled = false;
+                }, 3000);
+            } else {
+                response.json().then(data => {
+                    if (Object.hasOwn(data, 'errors')) {
+                        alert(data.errors.map(error => error.message).join(", "));
+                    } else {
+                        alert('Oops! There was a problem submitting your form.');
+                    }
+                    submitBtn.disabled = false;
+                });
+            }
+        })
+        .catch(error => {
+            submitBtn.classList.remove('loading');
+            alert('Oops! There was a problem submitting your form.');
+            submitBtn.disabled = false;
+        });
     });
 
 });

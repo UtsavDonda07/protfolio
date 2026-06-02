@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Utsav Donda - Portfolio Website. Software Engineer specializing in Flutter & Full-Stack Development. Experience at Rapidops Inc.">
+    <title>Utsav Donda | Software Engineer | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Devicon for Tech Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas/Gradients -->
+    <div class="bg-gradient-orb orb-1"></div>
+    <div class="bg-gradient-orb orb-2"></div>
+    <div class="bg-gradient-orb orb-3"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#hero" class="logo">
+                <span class="logo-accent">&lt;</span>UtsavDonda<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="assets/utsav_resume_v5.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-resume-nav">View Resume</a>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                <li><a href="assets/utsav_resume_v5.pdf" target="_blank" rel="noopener noreferrer" class="mobile-nav-link btn btn-outline btn-resume-mobile">View Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="hero-intro reveal-item">Hi there, my name is</p>
+                    <h1 class="hero-title reveal-item">Utsav Donda</h1>
+                    <h2 class="hero-subtitle reveal-item">I build <span class="typewriter-text" data-words='["dynamic Flutter apps.", "robust full-stack tools.", "interactive mobile systems."]'></span><span class="cursor">|</span></h2>
+                    <p class="hero-description reveal-item">
+                        I am a Software Engineer specializing in creating high-performance, cross-platform mobile experiences and full-stack solutions. Dedicated to clean architecture and writing highly maintainable, scalable code.
+                    </p>
+                    <div class="hero-ctas reveal-item">
+                        <a href="#projects" class="btn btn-primary">See My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-item">
+                    <!-- SVG Cyber Frame with Interactive Glowing Accents -->
+                    <div class="cyber-frame">
+                        <div class="cyber-circle">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="cyber-ring ring-1"></div>
+                        <div class="cyber-ring ring-2"></div>
+                        <div class="cyber-dots"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down">
+                    <span class="scroll-mouse">
+                        <span class="scroll-wheel"></span>
+                    </span>
+                </a>
+            </div>
+            
+            <!-- Quick Sticky Sidebar Socials -->
+            <div class="social-sidebar">
+                <a href="https://github.com/UtsavDonda07" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/utsav-donda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:utsavdonda07@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <div class="sidebar-line"></div>
+            </div>
+        </section>
+
+        <!-- About Section & Resume Details -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">01.</span>
+                    <h2 class="section-title">About Me & Resume</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Utsav, a passionate Software Engineer based in India. I love designing and building functional applications that solve real-world problems. My primary focus lies in cross-platform mobile ecosystem development using **Flutter**, but I also possess strong capabilities in full-stack web technologies like **React.js** and **Node.js**.
+                        </p>
+                        <p>
+                            During my career, I've had the opportunity to build products ranging from enterprise B2B SaaS CRM mobile apps to advanced local-first AI workflow engines. My development philosophy revolves around **Clean Architecture**, robust state management, and highly-optimized performance.
+                        </p>
+                        
+                        <div class="education-card">
+                            <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                            <div class="edu-item">
+                                <div class="edu-header">
+                                    <h4>Bachelor of Information Technology</h4>
+                                    <span class="edu-date">2020 - 2024</span>
+                                </div>
+                                <p class="edu-school">Vishwakarma Government Engineering College</p>
+                                <p class="edu-loc">Ahmedabad, Gujarat</p>
+                            </div>
+                        </div>
+
+                        <div class="achievements-box">
+                            <div class="achievement-icon">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="achievement-content">
+                                <h4>LeetCode Milestone</h4>
+                                <p>Earned the prestigious **500 Days LeetCode Badge** demonstrating continuous problem-solving and algorithmic training.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-resume-showcase">
+                        <div class="resume-frame">
+                            <div class="resume-glow"></div>
+                            <div class="resume-content-wrapper">
+                                <div class="resume-header-preview">
+                                    <div class="resume-avatar">UD</div>
+                                    <div class="resume-title-preview">
+                                        <h3>Utsav Donda</h3>
+                                        <p>Software Engineer</p>
+                                    </div>
+                                </div>
+                                <ul class="resume-quick-facts">
+                                    <li><i class="fa-solid fa-phone"></i> +91 9313833967</li>
+                                    <li><i class="fa-solid fa-envelope"></i> utsavdonda07@gmail.com</li>
+                                    <li><i class="fa-solid fa-location-dot"></i> Surat, Gujarat</li>
+                                    <li><i class="fa-brands fa-github"></i> github.com/UtsavDonda07</li>
+                                </ul>
+                                <div class="resume-action-buttons">
+                                    <a href="mailto:utsavdonda07@gmail.com" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+                                    <a href="assets/utsav_resume_v5.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm"><i class="fa-solid fa-file-pdf"></i> View Resume</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">02.</span>
+                    <h2 class="section-title">My Skills & Arsenal</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-intro">
+                    <p>Here are some of the programming languages, framework technologies, and system tools I specialize in to build production-ready software:</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Languages Category -->
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <i class="fa-solid fa-terminal"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag" data-level="90%">
+                                <i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-tag" data-level="95%">
+                                <i class="devicon-dart-plain colored"></i>
+                                <span>Dart</span>
+                            </div>
+                            <div class="skill-tag" data-level="80%">
+                                <i class="devicon-python-plain colored"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technologies & Frameworks -->
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <i class="fa-solid fa-cubes"></i>
+                            <h3>Frameworks & Libs</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag" data-level="95%">
+                                <i class="devicon-flutter-plain colored"></i>
+                                <span>Flutter</span>
+                            </div>
+                            <div class="skill-tag" data-level="85%">
+                                <i class="devicon-react-original colored"></i>
+                                <span>React.js</span>
+                            </div>
+                            <div class="skill-tag" data-level="85%">
+                                <i class="devicon-nodejs-plain colored"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-tag" data-level="85%">
+                                <i class="devicon-postgresql-plain colored"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="skill-tag" data-level="90%">
+                                <i class="fa-solid fa-gears text-accent"></i>
+                                <span>BLoC / GetX / Provider</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skills-category">
+                        <div class="category-header">
+                            <i class="fa-solid fa-toolbox"></i>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-tag">
+                                <i class="devicon-git-plain colored"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fa-solid fa-paper-plane text-accent"></i>
+                                <span>Postman</span>
+                            </div>
+                            <div class="skill-tag">
+                                <i class="devicon-firebase-plain colored"></i>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="skill-tag">
+                                <i class="devicon-supabase-plain colored"></i>
+                                <span>Supabase</span>
+                            </div>
+                            <div class="skill-tag">
+                                <i class="devicon-figma-plain colored"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-tag">
+                                <i class="devicon-docker-plain colored"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-tag">
+                                <i class="fa-brands fa-google-play text-accent"></i>
+                                <span>Play Console</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">03.</span>
+                    <h2 class="section-title">Where I've Worked</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Experience Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Aug 2024 – Mar 2026</div>
+                        <div class="timeline-content glass-card">
+                            <div class="experience-header">
+                                <h3>Software Engineer <span class="company-link">@ Rapidops Inc</span></h3>
+                                <span class="exp-location">Ahmedabad, Gujarat</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Developed and maintained cross-platform mobile applications using **Flutter** across multiple domains including CRM, research, e-commerce, and workflow automation.</li>
+                                <li>Implemented solutions using various **state management techniques** (BLoC, Provider, GetX), integrated REST APIs, Firebase, and local databases to deliver feature-rich mobile applications.</li>
+                                <li>Built and optimized advanced features including chat systems, push notifications, workflow automation, voice-to-text, deep linking, background processing, and offline-first experiences while improving application performance and maintainability.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2024 – Jul 2024</div>
+                        <div class="timeline-content glass-card">
+                            <div class="experience-header">
+                                <h3>Software Engineer Trainee <span class="company-link">@ Rapidops Inc</span></h3>
+                                <span class="exp-location">Ahmedabad, Gujarat</span>
+                            </div>
+                            <ul class="experience-bullets">
+                                <li>Built foundational skills in **Flutter** and cross-platform development by working on real-world Android and tablet applications, contributing to UI implementation and user interaction flows.</li>
+                                <li>Gained hands-on experience in **Flutter, Node.js, and React.js**, building full-stack understanding and collaborating within an agile team environment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">04.</span>
+                    <h2 class="section-title">Projects Showcase</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Salesmate CRM -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <img src="assets/images/salesmate.png" alt="Salesmate CRM Logo" class="project-logo">
+                                <div class="project-links">
+                                    <a href="https://play.google.com/store/apps/details?id=com.rapidops.salesmate" target="_blank" rel="noopener noreferrer" aria-label="Play Store"><i class="fa-brands fa-google-play"></i></a>
+                                    <a href="https://apps.apple.com/in/app/salesmate-sales-crm/id1114709439" target="_blank" rel="noopener noreferrer" aria-label="App Store"><i class="fa-brands fa-apple"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Salesmate CRM</h3>
+                        </div>
+                        <p class="project-description">
+                            A production-grade B2B SaaS CRM mobile application. Features clean architecture, BLoC state management, complex workflow automation, AI-powered text generation, support ticket logs, voice assistant triggers, and multi-environment flavor configurations.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>BLoC</span>
+                            <span>Clean Architecture</span>
+                            <span>REST APIs</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Workflow AI -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <img src="assets/images/workflow_ai.png" alt="Workflow AI Logo" class="project-logo">
+                            </div>
+                            <h3 class="project-title">Workflow AI</h3>
+                        </div>
+                        <p class="project-description">
+                            A local-first workflow automation platform featuring a custom visual node editor. Integrates OpenAI and Gemini APIs, background trigger actions, conditional execution blocks, JSON schema processing, and local database persistence.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>OpenAI/Gemini</span>
+                            <span>Local DB</span>
+                            <span>Node Editor</span>
+                            <span>JSON Processing</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Lotus AI -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <img src="assets/images/lotus_ai.png" alt="Lotus AI Logo" class="project-logo">
+                                <div class="project-links">
+                                    <a href="https://play.google.com/store/apps/details?id=com.greenleaf.pixel" target="_blank" rel="noopener noreferrer" aria-label="Play Store"><i class="fa-brands fa-google-play"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Lotus AI</h3>
+                        </div>
+                        <p class="project-description">
+                            An independently launched mobile application utilizing Google Sign-In, Firebase Auth, and Firestore databases. Integrates Google Mobile Ads, image pickers, caching mechanisms, custom SVG vectors, and GetX state management flows.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>GetX</span>
+                            <span>Firebase Suite</span>
+                            <span>Google Sign-In</span>
+                            <span>AdMob</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: SnapZ -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <img src="assets/images/snap_z.png" alt="SnapZ Logo" class="project-logo">
+                                <div class="project-links">
+                                    <a href="https://play.google.com/store/apps/details?id=com.greenleaf.snap_z" target="_blank" rel="noopener noreferrer" aria-label="Play Store"><i class="fa-brands fa-google-play"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">SnapZ</h3>
+                        </div>
+                        <p class="project-description">
+                            A self-published custom photography tool and wallpaper utility. Features In-App Purchases, Google Sign-In, and Firebase integration. Built with custom image workflows, AdMob placements, local GetStorage cache, and GetX state management.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>GetX</span>
+                            <span>Firebase Suite</span>
+                            <span>In-App Purchases</span>
+                            <span>AdMob</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Email Automation -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <img src="assets/images/email_automation.png" alt="Email Automation Logo" class="project-logo">
+                            </div>
+                            <h3 class="project-title">Email Automation</h3>
+                        </div>
+                        <p class="project-description">
+                            A minimal job application assistant built with Flutter. Extracts recruiter emails from shared text via sharing intents, manages templates, attaches resumes, supports background SMTP email transmissions, and logs history in local Hive DB.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Hive DB</span>
+                            <span>url_launcher</span>
+                            <span>SMTP Mailer</span>
+                            <span>Sharing Intent</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: BAPS Research APP -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <img src="assets/images/baps_research.png" alt="BAPS Research Logo" class="project-logo">
+                            </div>
+                            <h3 class="project-title">BAPS Research APP</h3>
+                        </div>
+                        <p class="project-description">
+                            A Flutter-based application for accessing and reading BAPS spiritual and academic research journals. Integrates a custom PDF viewer, localized page layouts, smooth loading states, and GetX state management flows.
+                        </p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>GetX</span>
+                            <span>PDF Viewer</span>
+                            <span>WebViews</span>
+                            <span>Localizations</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Apna Service -->
+                    <div class="project-card glass-card">
+                        <div class="project-header">
+                            <div class="project-icons">
+                                <img src="assets/images/apna_service.svg" alt="Apna Service Logo" class="project-logo">
+                                <div class="project-links">
+                                    <a href="https://github.com/UtsavDonda07/Apna-Service" target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Apna Service</h3>
+                        </div>
+                        <p class="project-description">
+                            A full-stack local service marketplace marketplace connecting vendors and customers. Built with a React (Vite, Redux Toolkit, Tailwind) frontend and a Node.js + Express backend with Postgres via Prisma and Socket.io for live updates.
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Prisma</span>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">05.</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Let's Work Together</h3>
+                        <p>
+                            I'm currently open to new opportunities, freelance collaborations, or just connecting with tech enthusiasts! If you have a question or want to discuss a project, feel free to drop a message.
+                        </p>
+                        
+                        <div class="info-list">
+                            <a href="mailto:utsavdonda07@gmail.com" class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <span>utsavdonda07@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+919313833967" class="info-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <span>+91 9313833967</span>
+                                </div>
+                            </a>
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <span>Surat, Gujarat, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container glass-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required placeholder=" ">
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block btn-submit">
+                                <span class="submit-text">Send Message</span>
+                                <span class="submit-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+                                <span class="submit-success-icon"><i class="fa-solid fa-check"></i> Sent!</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-socials">
+                <a href="https://github.com/UtsavDonda07" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/utsav-donda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:utsavdonda07@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="footer-copyright">
+                Designed & Built by <a href="https://github.com/UtsavDonda07" target="_blank" rel="noopener noreferrer">Utsav Donda</a> &copy; 2026. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

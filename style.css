@@ -845,7 +845,7 @@ button, input, textarea {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: 30px;
 }
 
@@ -1020,7 +1020,7 @@ button, input, textarea {
    ========================================================================== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
     gap: 30px;
 }
 
@@ -1473,3 +1473,45 @@ button, input, textarea {
         height: 50px;
     }
 }
+
+/* Extra responsiveness for small mobile devices */
+@media (max-width: 480px) {
+    .section-container {
+        padding: 60px 16px;
+    }
+    
+    .cyber-frame {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .cyber-circle {
+        width: 140px;
+        height: 140px;
+        font-size: 2.8rem;
+    }
+    
+    .ring-1 {
+        width: 190px;
+        height: 190px;
+    }
+    
+    .ring-2 {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .resume-frame {
+        padding: 20px;
+    }
+    
+    .resume-action-buttons {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .info-item span {
+        word-break: break-all;
+    }
+}
+
